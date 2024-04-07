@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./assets/favicon1.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="imagen">
+                <img src="./assets/dog-looking-up.svg" alt="Perro mirando hacia arriba">
+            </div> 
+            <div class="titulo">
+                <h1> <span> Encriptador de texto</span> </h1>
+            </div>                     
+        </div>       
+    </header>
+    <main> 
+        <section class="codificador">
+            <div id="contenedor_codificador">
+                <div class="texto_codificador" >
+                    <textarea  class="textarea" id="codificador" placeholder="Escribe el mensaje aquí."></textarea>             
+                    <p id="instrucciones" ><span class="fa">&#xf06a; </span>    Solo letras minúsculas y sin acentos</p>
+                </div>            
+                <div class="botonera">
+                    <button onclick="codificartexto();" id="encriptar" class="boton">Encriptar!</button>
+                    <button onclick="decodificartexto();" id="desencriptar" class="boton">Desencriptar!</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="decodificador" >
+            <div id="contenedor_decodificador">
+                    <div id="texto_codificado"></div>   
+                    <div class="textodeco" id="textodeco">
+                        <img id= "muñeco" src="./assets/Muñeco.png">
+                        <h3>Ningún mensaje fue encontrado</h3>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <div class="botonera_copiar">
+                        <button onclick="copiartexto();" id="boton_copiar" class="boton">Copiar</button>
+                    </div>            
+            </div>
+
+        </section>
+        
+    </main>
+    <footer >
+        <div class="copyright">  
+            <img src="./assets/dog-looking-up.svg">           
+            <span >  &copy Juan Herrera - 2024</span>
+        </div>                 
+                   
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>

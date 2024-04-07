@@ -1,0 +1,290 @@
+* {  
+    box-sizing:border-box;
+}
+.rubik-font {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-slab-font {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(315deg, cyan, rgb(135, 135, 235));
+    font-family: "Roboto Slab";
+}
+header{ 
+    width: 70%;   
+    height: 20%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 1em;
+}
+.imagen{    
+    width: 10%;
+}
+
+.logo img{
+    width: 4em;    
+}
+.logo h1{
+    color: #0A3871;
+    font-family: 'RubiK';
+    font-size: 2em;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75%;   
+}
+
+.codificador{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;  
+    height: 100%;          
+}
+#contenedor_codificador{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 80%;
+    height: 100%;
+}
+.texto_codificador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%; 
+}
+.texto_codificador p{
+    font-family: "Rubik";
+    color: #0A3871;
+    font-size: 0.8em;
+}
+#codificador{ 
+    width: 100%;
+    height: 80%;  
+    color: #0A3871; 
+    font-size: 1em;
+    text-align: left;
+}
+textarea{
+    border: none;
+    resize: none;
+    outline:none;
+    background: transparent;
+}
+
+.botonera{  
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    align-content: center;
+    margin-bottom: 15px;
+}
+.boton{
+    width: 45%;
+    height: 4em;
+    font-size: 16px;
+    font-family: 'RubiK';
+    line-height: 15px;
+    cursor: pointer;
+    letter-spacing: 0.5em;
+    text-align: center;
+    border-radius: 24px;  
+    border: 1  px; 
+}
+.boton:hover {
+    transform: scaleX(1.1) scaleY(1.1);   
+}
+#encriptar{
+    background-color: chocolate;
+}
+
+.decodificador{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 25%;
+    height: 95%;    
+}
+#contenedor_decodificador{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 95%;
+    margin-left: auto;
+    margin-right: auto;    
+    background: #FFFFFF;
+    border-color: #e8e693;
+    border-width: .0.5px;
+    border-style: dashed;
+    border-radius: 20px;
+}
+#decodificador{  
+    width: 100%;    
+    padding: 5px;
+}
+#texto_codificado{
+    margin: 15px 10px;
+    height: 0%;
+    max-height: 80%;
+    overflow-y: auto;
+}
+.textodeco{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    font-size: 1em;    
+}
+#muñeco{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.textodeco h3{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.textodeco p{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+.botonera_copiar{
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+#boton_copiar{
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    height: 5%;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    border-radius: 5%;
+}
+.copyright img{
+    width: 20px;
+    margin-right: 5px;
+}
+.copyright span{
+    font-size: .5em;
+    opacity: 0.5;
+}
+
+/* Para moviles y tablet*/
+@media screen and (max-width: 800px) {
+    .boton{
+        letter-spacing: normal;      
+    }
+  }
+@media only screen and (max-width: 480px) {
+    header{
+        width: 100%;
+        height: 10%;
+    }
+    .logo{   
+        align-items: center;
+        position: relative;
+        padding-left: 0.5em;
+    }
+    .logo img{
+        width: 40px;    
+    }
+    .logo h1{
+        color: #0A3871;
+        font-size: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    main{
+        flex-direction: column;
+        width: 100%;
+        height: 85%;   
+    }
+    .codificador{
+        justify-content: space-evenly;
+        width: 100%;  
+        height: 60%;          
+    }
+    #contenedor_codificador{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .texto_codificador{
+            width: 100%;  
+            height: 65%;          
+    }
+    .botonera{  
+        display: flex; 
+        flex-direction: column;   
+        width: 100%;
+        height: 35%;
+    }
+    .boton{
+        width: 100%;
+        height: 50px;       
+    }
+    
+    .decodificador{       
+        position: relative;
+        width: 100%;
+        height: 40%;
+        right: inherit;
+    }
+    #contenedor_decodificador{
+        width: 80%;
+        justify-content: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1em;
+    }
+    #muñeco{
+        display: none;
+    }
+    .textodeco{
+        height: 60%;
+    }
+    .botonera_copiar{
+        margin-top: 5px; 
+        height: 40%;
+    }
+    #boton_copiar{
+        
+        /* height: 100%; */
+    }
+    
+    footer{
+        height: 5%;
+    }
+  }
